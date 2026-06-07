@@ -1,6 +1,6 @@
 # ============================================================
 #  Classificação de Câncer de Mama com Redes Neurais (Keras)
-#  Dataset: wisc_bc_data.csv
+#  Dataset: wisc_bc_data.csv (Wisconsin Breast Cancer) 569 pacientes e 30 dados clínicos
 #  Objetivo: Classificar tumor como Maligno (M) ou Benigno (B)
 # ============================================================
 
