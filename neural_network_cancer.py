@@ -103,12 +103,12 @@ X_test  = scaler.transform(X_test)
 # ── 5. CONSTRUÇÃO DA REDE NEURAL ─────────────────────────────
 # Arquitetura: Input → 64 → Dropout → 32 → Dropout → 16 → Output
 model = Sequential([
-    Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
+    Dense(64, activation='relu', input_shape=(X_train.shape[1],)), # Camada de entrada
     Dropout(0.3),
     Dense(32, activation='relu'),   # Camada oculta 1
     Dropout(0.3),
     Dense(16, activation='relu'),   # Camada oculta 2
-    Dense(1,  activation='sigmoid') # Saída binária
+    Dense(1,  activation='sigmoid') # Saída 
 ])
 
 model.compile(
